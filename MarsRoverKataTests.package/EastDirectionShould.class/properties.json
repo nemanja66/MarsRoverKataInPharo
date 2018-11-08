@@ -1,7 +1,7 @@
 {
 	"commentStamp" : "",
 	"super" : "TestCase",
-	"category" : "MarsRoverKata",
+	"category" : "MarsRoverKataTests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],

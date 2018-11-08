@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
 	"super" : "TestCase",
-	"category" : "MarsRoverKata",
+	"category" : "MarsRoverKataTests",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "SouthDirectionShould",
+	"name" : "WestDirectionShould",
 	"type" : "normal"
 }

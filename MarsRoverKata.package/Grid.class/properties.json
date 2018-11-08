@@ -1,0 +1,18 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "MarsRoverKata",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"maxHeight",
+		"maxWidth",
+		"minHeight",
+		"minWidth",
+		"obstacles",
+		"locationStrategies"
+	],
+	"name" : "Grid",
+	"type" : "normal"
+}

@@ -1,0 +1,17 @@
+{
+	"commentStamp" : "",
+	"super" : "Object",
+	"category" : "MarsRoverKata",
+	"classinstvars" : [
+		"direction"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"direction",
+		"grid",
+		"coordinates"
+	],
+	"name" : "Rover",
+	"type" : "normal"
+}

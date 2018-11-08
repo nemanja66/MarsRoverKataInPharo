@@ -6,12 +6,13 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"maxHeight",
-		"maxWidth",
-		"minHeight",
-		"minWidth",
+		"northBoundary",
+		"eastBoundary",
+		"southBoundary",
+		"westBoundary",
 		"obstacles",
-		"locationStrategies"
+		"locationStrategies",
+		"collisionStrategies"
 	],
 	"name" : "Grid",
 	"type" : "normal"

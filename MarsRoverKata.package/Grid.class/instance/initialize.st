@@ -1,10 +1,10 @@
 initialization
 initialize
 	"comment stating purpose of message"
-	maxHeight := 10.
-	maxWidth  := 10.
-	minHeight := 0.
-	minWidth  :=0.
+	northBoundary  := 10.
+	eastBoundary   := 10.
+	southBoundary  := -1.
+	westBoundary   := -1.
 	locationStrategies := Dictionary new.
 	locationStrategies at: $N put: [ :coordinates | Coordinates x: coordinates x y: coordinates y + 1].
 	locationStrategies at: $E put: [ :coordinates | Coordinates x: coordinates x + 1 y: coordinates y].

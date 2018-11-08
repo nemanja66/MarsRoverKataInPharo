@@ -2,16 +2,13 @@
 	"commentStamp" : "",
 	"super" : "Object",
 	"category" : "MarsRoverKata",
-	"classinstvars" : [
-		"direction"
-	],
+	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"direction",
-		"navigator",
-		"coordinates"
+		"grid",
+		"collisionStrategies"
 	],
-	"name" : "Rover",
+	"name" : "Navigator",
 	"type" : "normal"
 }

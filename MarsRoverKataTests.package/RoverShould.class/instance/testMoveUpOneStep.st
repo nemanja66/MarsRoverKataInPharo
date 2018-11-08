@@ -1,7 +1,8 @@
 testMovement
 testMoveUpOneStep
-	|rover position grid|
+	|rover position navigator grid|
 	grid := Grid new.
-	rover:=Rover withGrid: grid.
+	navigator := Navigator withGrid: grid.
+	rover:=Rover withNavigator: navigator.
 	position := rover execute: 'M'.
 	self assert: position equals: '0:1:N'.

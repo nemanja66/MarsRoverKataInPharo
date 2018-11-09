@@ -1,9 +1,11 @@
 testMovement
 testMoveLeft
-	|rover position navigator grid|
+	|rover position navigator grid startingPosition|
+	startingPosition := Coordinates x:5 y:5.
 	grid := Grid new.
 	navigator := Navigator withGrid: grid.
 	rover:=Rover withNavigator: navigator.
-	rover direction: (WestDirection withRover: rover).
+	rover coordinates: startingPosition.
+	rover direction: (WestDirection  withRover: rover).
 	position := rover execute: 'M'.
-	self assert: position equals: '-1:0:W'.
+	self assert: position equals: '4:5:W'.

@@ -1,5 +1,5 @@
 testMovement
-testMoveSouthTwoSteps
+testMoveSouth
 	|rover position navigator grid startingPosition|
 	startingPosition := Coordinates x:5 y:5.
 	grid := Grid new.
@@ -7,5 +7,5 @@ testMoveSouthTwoSteps
 	rover:=Rover withNavigator: navigator.
 	rover coordinates: startingPosition.
 	rover direction: (SouthDirection  withRover: rover).
-	position := rover execute: 'MM'.
-	self assert: position equals: '5:3:S'.
+	position := rover execute: 'M'.
+	self assert: position equals: '5:4:S'.

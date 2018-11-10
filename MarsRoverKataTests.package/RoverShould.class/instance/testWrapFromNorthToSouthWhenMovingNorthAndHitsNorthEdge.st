@@ -1,7 +1,8 @@
 testCollisions
 testWrapFromNorthToSouthWhenMovingNorthAndHitsNorthEdge
-	|rover position navigator grid|
-	grid := Grid new.
+	|rover position navigator grid testObstacles|
+	testObstacles := Set new.
+	grid := Grid withObstacles: testObstacles.
 	navigator := Navigator withGrid: grid.
 	rover:=Rover withNavigator: navigator.
 	rover direction: (NorthDirection  withRover: rover).

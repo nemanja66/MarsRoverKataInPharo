@@ -1,8 +1,9 @@
 testMovement
 testMoveSouthTwoSteps
-	|rover position navigator grid startingPosition|
+	|rover position navigator grid startingPosition testObstacles|
 	startingPosition := Coordinates x:5 y:5.
-	grid := Grid new.
+	testObstacles := Set new.
+	grid := Grid withObstacles: testObstacles.
 	navigator := Navigator withGrid: grid.
 	rover:=Rover withNavigator: navigator.
 	rover coordinates: startingPosition.

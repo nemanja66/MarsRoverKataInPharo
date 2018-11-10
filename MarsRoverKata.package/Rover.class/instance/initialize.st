@@ -4,3 +4,4 @@ initialize
 
 	direction := NorthDirection withRover:self.
 	coordinates := Coordinates x:0 y:0.
+	stop := false.

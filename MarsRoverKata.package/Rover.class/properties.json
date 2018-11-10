@@ -10,7 +10,8 @@
 	"instvars" : [
 		"direction",
 		"navigator",
-		"coordinates"
+		"coordinates",
+		"stop"
 	],
 	"name" : "Rover",
 	"type" : "normal"

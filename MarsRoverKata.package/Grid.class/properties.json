@@ -11,8 +11,7 @@
 		"southBoundary",
 		"westBoundary",
 		"obstacles",
-		"locationStrategies",
-		"collisionStrategies"
+		"locationStrategies"
 	],
 	"name" : "Grid",
 	"type" : "normal"

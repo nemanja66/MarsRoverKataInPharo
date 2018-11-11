@@ -7,5 +7,5 @@ nextCoordinatesFor: coordinates direction: anDirection rover: aRover
 	ifTrue: [aRover collisionDetected: 'obstacle'. ^nextPossibleCoordinates ]
 	ifFalse: [ 
 	((collisionStrategies at: anDirection) value: nextPossibleCoordinates)
-	ifTrue:[aRover collisionDetected: 'wall'. ^coordinates]
+	ifTrue:[aRover collisionDetected: 'boundary'. ^coordinates]
 	ifFalse: [ ^nextPossibleCoordinates ] ]

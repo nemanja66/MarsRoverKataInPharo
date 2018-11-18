@@ -2,7 +2,7 @@ movement
 execute: commands
 |command|
 commands do: [
-	:each | (stop) ifTrue:[^self formatPositionOutput: navigationParameters].
+	:each | (stop) ifFalse:[
 	command := commandFactory getCommand: each.
-	command execute: self].
+	command execute: self]].
 	^self formatPositionOutput: navigationParameters.

@@ -1,10 +1,11 @@
 testCollisions
 testWrapFromWestToEastWhenMovingWestAndHitsWestEdge
-	|rover position navigator grid testObstacles|
+	|rover position navigator grid testObstacles commandFactory|
    testObstacles := Set new.
 	grid := Grid withObstacles: testObstacles.
 	navigator := Navigator withGrid: grid.
-	rover:=Rover withNavigator: navigator.
-	rover direction: (WestDirection withRover: rover).
+	commandFactory := CommandFactory withNavigator: navigator.
+	rover:=Rover withCommandFactory: commandFactory.
+	rover navigationParameters direction: (WestDirection withRover: rover).
 	position := rover execute: 'M'.
 	self assert: position equals: '0:0:E'.

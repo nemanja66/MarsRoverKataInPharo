@@ -1,12 +1,13 @@
 testMovement
 testMoveLeftTwoSteps
-	|rover position navigator grid startingPosition testObstacles|
+	|rover position navigator grid startingPosition testObstacles commandFactory|
 	testObstacles := Set new.
 	grid := Grid withObstacles: testObstacles.
 	startingPosition := Coordinates x:5 y:5.
 	navigator := Navigator withGrid: grid.
-	rover:=Rover withNavigator: navigator.
-	rover coordinates: startingPosition.
-	rover direction: (WestDirection withRover: rover).
+	commandFactory := CommandFactory withNavigator: navigator.
+	rover:=Rover withCommandFactory: commandFactory.
+	rover navigationParameters coordinates: startingPosition.
+	rover navigationParameters direction: (WestDirection withRover: rover).
 	position := rover execute: 'MM'.
 	self assert: position equals: '3:5:W'.

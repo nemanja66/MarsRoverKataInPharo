@@ -8,10 +8,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"direction",
-		"navigator",
-		"coordinates",
-		"stop"
+		"navigationParameters",
+		"stop",
+		"commandFactory"
 	],
 	"name" : "Rover",
 	"type" : "normal"

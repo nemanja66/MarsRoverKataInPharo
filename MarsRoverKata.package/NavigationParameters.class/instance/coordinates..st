@@ -1,3 +1,3 @@
 accessing
 coordinates: anObject
-	^ coordinates := anObject
+	coordinates := anObject

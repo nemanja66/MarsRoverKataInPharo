@@ -1,4 +1,4 @@
-Creation
+factory methods
 getCommand: commandSymbol
 	(commandSymbol = $M)
 		ifTrue: [^MovementCommand withNavigator: navigator].

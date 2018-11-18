@@ -1,5 +1,5 @@
 navigation
-nextCoordinatesFor: aRover
+updateCoordinatesFor: aRover
 	|nextPossibleCoordinates _coordinates _directionSymbol|
 	_coordinates := aRover navigationParameters coordinates.
 	_directionSymbol := aRover navigationParameters direction symbol.

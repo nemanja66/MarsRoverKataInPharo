@@ -1,3 +1,3 @@
 commandExecution
 execute: aRover
-	navigator nextCoordinatesFor: aRover.
+	navigator updateCoordinatesFor: aRover.

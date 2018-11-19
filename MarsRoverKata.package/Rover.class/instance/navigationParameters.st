@@ -1,3 +1,0 @@
-accessing
-navigationParameters
-	^ navigationParameters

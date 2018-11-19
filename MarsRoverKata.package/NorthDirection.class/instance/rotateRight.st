@@ -1,3 +1,3 @@
 rotation
 rotateRight
-	rover navigationParameters direction: (EastDirection withRover: rover).
+	rover direction: (EastDirection withRover: rover).

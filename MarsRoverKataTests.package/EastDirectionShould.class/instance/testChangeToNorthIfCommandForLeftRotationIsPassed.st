@@ -2,7 +2,7 @@ tests
 testChangeToNorthIfCommandForLeftRotationIsPassed
 	|rover|
 	rover := Rover new.
-	rover navigationParameters direction: (EastDirection withRover: rover).
-	rover navigationParameters direction rotateLeft.
-	self assert: rover navigationParameters direction symbol equals: $N.
+	rover direction: (EastDirection withRover: rover).
+	rover direction rotateLeft.
+	self assert: rover direction symbol equals: $N.
 	

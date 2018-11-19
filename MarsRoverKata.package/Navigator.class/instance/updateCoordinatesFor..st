@@ -1,13 +1,11 @@
 navigation
 updateCoordinatesFor: aRover
-	|nextPossibleCoordinates _coordinates _directionSymbol|
-	_coordinates := aRover navigationParameters coordinates.
-	_directionSymbol := aRover navigationParameters direction symbol.
-	nextPossibleCoordinates := grid nextCoordinatesFor: _coordinates  direction: _directionSymbol.
+	|nextPossibleCoordinates|
+	nextPossibleCoordinates := grid nextCoordinatesFor: aRover coordinates  direction: aRover direction symbol.
 	
 	(grid isCoordinateAnObstacle: nextPossibleCoordinates)
-	ifTrue: [aRover collisionDetected: 'obstacle'. aRover navigationParameters coordinates: nextPossibleCoordinates ]
+	ifTrue: [aRover collisionDetected: 'obstacle'. aRover coordinates: nextPossibleCoordinates ]
 	ifFalse: [ 
-	((collisionStrategies at: _directionSymbol ) value: nextPossibleCoordinates)
+	((collisionStrategies at: aRover direction symbol ) value: nextPossibleCoordinates)
 	ifTrue:[aRover collisionDetected: 'boundary'.]
-	ifFalse: [ aRover navigationParameters coordinates: nextPossibleCoordinates ] ]
+	ifFalse: [ aRover coordinates: nextPossibleCoordinates ] ]

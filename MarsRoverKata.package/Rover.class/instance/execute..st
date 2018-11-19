@@ -5,4 +5,4 @@ commands do: [
 	:each | (stop) ifFalse:[
 	command := commandFactory getCommand: each.
 	command execute: self]].
-	^self formatPositionOutput: navigationParameters.
+	^self formatPositionOutput: coordinates direction: direction.

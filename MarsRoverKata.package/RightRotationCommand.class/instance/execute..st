@@ -1,3 +1,3 @@
 execution
 execute: aRover
-	aRover navigationParameters direction rotateRight.
+	aRover direction rotateRight.

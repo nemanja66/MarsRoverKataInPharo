@@ -7,7 +7,7 @@ testMoveLeftTwoSteps
 	navigator := Navigator withGrid: grid.
 	commandFactory := CommandFactory withNavigator: navigator.
 	rover:=Rover withCommandFactory: commandFactory.
-	rover navigationParameters coordinates: startingPosition.
-	rover navigationParameters direction: (WestDirection withRover: rover).
+	rover coordinates: startingPosition.
+	rover direction: (WestDirection withRover: rover).
 	position := rover execute: 'MM'.
 	self assert: position equals: '3:5:W'.

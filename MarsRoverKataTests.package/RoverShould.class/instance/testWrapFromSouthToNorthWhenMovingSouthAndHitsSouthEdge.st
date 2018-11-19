@@ -6,6 +6,6 @@ testWrapFromSouthToNorthWhenMovingSouthAndHitsSouthEdge
 	navigator := Navigator withGrid: grid.
 	commandFactory := CommandFactory withNavigator: navigator.
 	rover:=Rover withCommandFactory: commandFactory.
-	rover navigationParameters direction: (SouthDirection  withRover: rover).
+	rover direction: (SouthDirection  withRover: rover).
 	position := rover execute: 'M'.
 	self assert: position equals: '0:0:N'.

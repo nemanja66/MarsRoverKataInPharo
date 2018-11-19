@@ -1,6 +1,6 @@
 construction
-withNavigator: aNavigator
+withGrid: aGrid
 	| movementCommand |
 	movementCommand := self new.
-	movementCommand navigator: aNavigator.
+	movementCommand grid: aGrid.
 	^movementCommand.

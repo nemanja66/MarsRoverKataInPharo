@@ -6,7 +6,9 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"navigator"
+		"navigator",
+		"collisionStrategies",
+		"grid"
 	],
 	"name" : "MovementCommand",
 	"type" : "normal"

@@ -1,11 +1,10 @@
 testMovement
 testMoveSouthTwoSteps
-	|rover position navigator grid startingPosition testObstacles commandFactory|
+	|rover position grid startingPosition testObstacles commandFactory|
 	startingPosition := Coordinates x:5 y:5.
 	testObstacles := Set new.
 	grid := Grid withObstacles: testObstacles.
-	navigator := Navigator withGrid: grid.
-	commandFactory := CommandFactory withNavigator: navigator.
+	commandFactory := CommandFactory withGrid: grid.
 	rover:=Rover withCommandFactory: commandFactory.
 	rover coordinates: startingPosition.
 	rover direction: (SouthDirection  withRover: rover).

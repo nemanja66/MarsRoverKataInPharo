@@ -1,8 +1,8 @@
 factory methods
 getCommand: commandSymbol
 	(commandSymbol = $M)
-		ifTrue: [^MovementCommand withNavigator: navigator].
+		ifTrue: [^MovementCommand withGrid: grid].
 	(commandSymbol = $R)
-		ifTrue: [^RightRotationCommand withNavigator: navigator ].
+		ifTrue: [^RightRotationCommand new].
 	(commandSymbol = $L)
-		ifTrue: [^LeftRotationCommand  withNavigator: navigator ].
+		ifTrue: [^LeftRotationCommand new].

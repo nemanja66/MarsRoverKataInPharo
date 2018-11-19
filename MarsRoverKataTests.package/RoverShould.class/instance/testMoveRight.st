@@ -1,10 +1,9 @@
 testMovement
 testMoveRight
-	|rover position navigator grid testObstacles commandFactory|
+	|rover position grid testObstacles commandFactory|
 	testObstacles := Set new.
 	grid := Grid withObstacles: testObstacles.
-	navigator := Navigator withGrid: grid.
-	commandFactory := CommandFactory withNavigator: navigator.
+	commandFactory := CommandFactory withGrid: grid.
 	rover:=Rover withCommandFactory: commandFactory.
 	rover direction: (EastDirection withRover: rover).
 	position := rover execute: 'M'.

@@ -6,7 +6,7 @@
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
-		"navigator"
+		"grid"
 	],
 	"name" : "CommandFactory",
 	"type" : "normal"

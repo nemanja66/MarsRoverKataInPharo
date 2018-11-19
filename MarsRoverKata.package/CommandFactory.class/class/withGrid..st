@@ -1,6 +1,6 @@
 construction
-withNavigator: aNavigator
+withGrid: aGrid
 	| commandFactory |
 	commandFactory := self new.
-	commandFactory navigator: aNavigator.
+	commandFactory grid: aGrid.
 	^commandFactory.

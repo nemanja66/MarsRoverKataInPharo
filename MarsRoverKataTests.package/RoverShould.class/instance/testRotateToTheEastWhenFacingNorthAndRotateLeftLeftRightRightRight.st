@@ -1,10 +1,9 @@
 testsRotation
 testRotateToTheEastWhenFacingNorthAndRotateLeftLeftRightRightRight
-	|rover grid navigator position obstacles commandFactory|
+	|rover grid position obstacles commandFactory|
 	obstacles := Set new.
 	grid := Grid withObstacles: obstacles.
-	navigator := Navigator withGrid: grid.
-	commandFactory := CommandFactory withNavigator: navigator.
+	commandFactory := CommandFactory withGrid: grid.
 	rover:=Rover withCommandFactory: commandFactory.
 	position := rover execute: 'LLRRR'.
 	self assert: position equals: '0:0:E'.
